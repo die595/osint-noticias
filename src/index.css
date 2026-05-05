@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg-dark: #0a0a0b;
+  --bg-header: #111113;
+  --bg-sidebar: #0c0c0e;
+  --bg-main: #080808;
+  --accent-red: #dc2626;
+  --border-zinc: #27272a; /* zinc-800 */
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: white;
+  font-family: var(--font-sans);
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  background: var(--bg-dark) !important;
+}
+
+/* Bold Typography specific styles */
+.header-italic {
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.sidebar-label {
+  font-size: 10px;
+  font-weight: 900;
+  color: #71717a; /* zinc-500 */
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

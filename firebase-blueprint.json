@@ -1,0 +1,28 @@
+{
+  "entities": {
+    "News": {
+      "title": "News Entry",
+      "description": "Represents a news item scraped from Telegram or Facebook.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "content": { "type": "string" },
+        "url": { "type": "string" },
+        "source": { "type": "string", "enum": ["telegram", "facebook", "international"] },
+        "sourceName": { "type": "string" },
+        "department": { "type": "string", "enum": ["Antioquia", "Córdoba", "Internacional"] },
+        "municipalityId": { "type": "string" },
+        "typology": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "keywords": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["title", "content", "source", "department", "typology", "timestamp"]
+    }
+  },
+  "firestore": {
+    "news": {
+      "schema": "News",
+      "description": "Collection of all aggregated news."
+    }
+  }
+}

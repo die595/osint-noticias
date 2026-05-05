@@ -1,0 +1,72 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { Municipality } from '../types';
+
+export const MUNICIPALITIES: Municipality[] = [
+  // CÓRDOBA (30 Municipios)
+  { id: 'monteria', name: 'Montería', department: 'Córdoba', lat: 8.7479, lng: -75.8814 },
+  { id: 'ayapel', name: 'Ayapel', department: 'Córdoba', lat: 8.3128, lng: -75.1436 },
+  { id: 'buenavista_co', name: 'Buenavista', department: 'Córdoba', lat: 8.1691, lng: -75.4389 },
+  { id: 'canalete', name: 'Canalete', department: 'Córdoba', lat: 8.7892, lng: -76.2417 },
+  { id: 'cerete', name: 'Cereté', department: 'Córdoba', lat: 8.8833, lng: -75.7903 },
+  { id: 'chima_co', name: 'Chimá', department: 'Córdoba', lat: 9.1458, lng: -75.6264 },
+  { id: 'chinu', name: 'Chinú', department: 'Córdoba', lat: 9.1064, lng: -75.3978 },
+  { id: 'cienaga_de_oro', name: 'Ciénaga de Oro', department: 'Córdoba', lat: 8.8767, lng: -75.6214 },
+  { id: 'cotorra', name: 'Cotorra', department: 'Córdoba', lat: 9.0436, lng: -75.7922 },
+  { id: 'la_apartada', name: 'La Apartada', department: 'Córdoba', lat: 8.1006, lng: -75.3339 },
+  { id: 'lorica', name: 'Lorica', department: 'Córdoba', lat: 9.2314, lng: -75.8139 },
+  { id: 'los_cordobas', name: 'Los Córdobas', department: 'Córdoba', lat: 8.9039, lng: -76.3533 },
+  { id: 'momil', name: 'Momil', department: 'Córdoba', lat: 9.2378, lng: -75.6417 },
+  { id: 'montelibano', name: 'Montelíbano', department: 'Córdoba', lat: 7.9794, lng: -75.4178 },
+  { id: 'monitos', name: 'Moñitos', department: 'Córdoba', lat: 9.1556, lng: -76.1364 },
+  { id: 'planeta_rica', name: 'Planeta Rica', department: 'Córdoba', lat: 8.4128, lng: -75.5833 },
+  { id: 'pueblo_nuevo', name: 'Pueblo Nuevo', department: 'Córdoba', lat: 8.5028, lng: -75.5086 },
+  { id: 'puerto_escondido', name: 'Puerto Escondido', department: 'Córdoba', lat: 9.0253, lng: -76.2658 },
+  { id: 'puerto_libertador', name: 'Puerto Libertador', department: 'Córdoba', lat: 7.8892, lng: -75.6711 },
+  { id: 'purisima', name: 'Purísima', department: 'Córdoba', lat: 9.2358, lng: -75.7233 },
+  { id: 'sahagun', name: 'Sahagún', department: 'Córdoba', lat: 8.9461, lng: -75.4414 },
+  { id: 'san_andres_sotavento', name: 'San Andrés de Sotavento', department: 'Córdoba', lat: 9.1417, lng: -75.5086 },
+  { id: 'san_antero', name: 'San Antero', department: 'Córdoba', lat: 9.3756, lng: -75.7583 },
+  { id: 'san_bernardo_viento', name: 'San Bernardo del Viento', department: 'Córdoba', lat: 9.3556, lng: -75.9533 },
+  { id: 'san_carlos_co', name: 'San Carlos', department: 'Córdoba', lat: 8.7992, lng: -75.7033 },
+  { id: 'san_jose_ure', name: 'San José de Uré', department: 'Córdoba', lat: 7.8481, lng: -75.4853 },
+  { id: 'san_pelayo', name: 'San Pelayo', department: 'Córdoba', lat: 8.9556, lng: -75.8614 },
+  { id: 'tierralta', name: 'Tierralta', department: 'Córdoba', lat: 8.1744, lng: -76.0594 },
+  { id: 'tuchin', name: 'Tuchín', department: 'Córdoba', lat: 9.1839, lng: -75.5583 },
+  { id: 'valencia_co', name: 'Valencia', department: 'Córdoba', lat: 8.2589, lng: -76.1489 },
+
+  // ANTIOQUIA (Selected major ones for readability, can be expanded to 125)
+  { id: 'medellin', name: 'Medellín', department: 'Antioquia', lat: 6.2442, lng: -75.5812 },
+  { id: 'apartado', name: 'Apartadó', department: 'Antioquia', lat: 7.8833, lng: -76.6333 },
+  { id: 'caucasia', name: 'Caucasia', department: 'Antioquia', lat: 7.9864, lng: -75.1933 },
+  { id: 'turbo', name: 'Turbo', department: 'Antioquia', lat: 8.0933, lng: -76.7289 },
+  { id: 'bello', name: 'Bello', department: 'Antioquia', lat: 6.3333, lng: -75.5583 },
+  { id: 'itagui', name: 'Itagüí', department: 'Antioquia', lat: 6.1722, lng: -75.6139 },
+  { id: 'envigado', name: 'Envigado', department: 'Antioquia', lat: 6.1758, lng: -75.5833 },
+  { id: 'rionegro', name: 'Rionegro', department: 'Antioquia', lat: 6.1539, lng: -75.3736 },
+  { id: 'caldas_an', name: 'Caldas', department: 'Antioquia', lat: 6.0914, lng: -75.6353 },
+  { id: 'copacabana', name: 'Copacabana', department: 'Antioquia', lat: 6.3467, lng: -75.5083 },
+  { id: 'la_estrella', name: 'La Estrella', department: 'Antioquia', lat: 6.1583, lng: -75.6433 },
+  { id: 'girardota', name: 'Girardota', department: 'Antioquia', lat: 6.3778, lng: -75.4467 },
+  { id: 'barbosa_an', name: 'Barbosa', department: 'Antioquia', lat: 6.4383, lng: -75.3314 },
+  { id: 'santa_fe_de_antioquia', name: 'Santa Fe de Antioquia', department: 'Antioquia', lat: 6.5569, lng: -75.8283 },
+  { id: 'yarumal', name: 'Yarumal', department: 'Antioquia', lat: 6.9631, lng: -75.4181 },
+  { id: 'amalfi', name: 'Amalfi', department: 'Antioquia', lat: 6.9111, lng: -75.0778 },
+  { id: 'segovia', name: 'Segovia', department: 'Antioquia', lat: 7.0789, lng: -74.7003 },
+  { id: 'remedios', name: 'Remedios', department: 'Antioquia', lat: 7.0272, lng: -74.6953 },
+  { id: 'ituango', name: 'Ituango', department: 'Antioquia', lat: 7.1714, lng: -75.7642 },
+  { id: 'dabeiba', name: 'Dabeiba', department: 'Antioquia', lat: 7.0017, lng: -76.2625 },
+  { id: 'chigorodo', name: 'Chigorodó', department: 'Antioquia', lat: 7.6667, lng: -76.6833 },
+  { id: 'carepa', name: 'Carepa', department: 'Antioquia', lat: 7.7583, lng: -76.6583 },
+  { id: 'necocli', name: 'Necoclí', department: 'Antioquia', lat: 8.4233, lng: -76.7856 },
+  { id: 'arboletes', name: 'Arboletes', department: 'Antioquia', lat: 8.85, lng: -76.4267 },
+  { id: 'el_bagre', name: 'El Bagre', department: 'Antioquia', lat: 7.6, lng: -74.8111 },
+  { id: 'nechi', name: 'Nechí', department: 'Antioquia', lat: 8.0944, lng: -74.7772 },
+  { id: 'taraza', name: 'Tarazá', department: 'Antioquia', lat: 7.5833, lng: -75.4 },
+  { id: 'caceres', name: 'Cáceres', department: 'Antioquia', lat: 7.5833, lng: -75.3333 },
+  { id: 'valdivia', name: 'Valdivia', department: 'Antioquia', lat: 7.1833, lng: -75.45 },
+  { id: 'zaragoza', name: 'Zaragoza', department: 'Antioquia', lat: 7.49, lng: -74.8667 }
+];

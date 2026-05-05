@@ -1,0 +1,6 @@
+{
+  "name": "GeoNews Antioquia & Córdoba",
+  "description": "Buscador de noticias en tiempo real para Antioquia y Córdoba con scraping de Telegram, clasificación por tipologías y mapa de calor municipal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
